@@ -29,7 +29,7 @@ def download_model(model_url, model_filename):
 # Streamlit app
 def main():
     st.sidebar.title('Stock Price Forecasting App')
-    st.sidebar.markdown('Copyright by Rajdeep Sarkar')
+    st.sidebar.markdown('Author Sunil Kappal')
 
     # User input for stock ticker symbol
     stock_symbol = st.sidebar.text_input('Enter Stock Ticker Symbol (e.g., MSFT):')
@@ -89,10 +89,10 @@ def main():
 
             # Load trained model based on selection
             if selected_model == "Neural Network":
-                model_url = "https://github.com/rajdeepUWE/stock_market_forecast/raw/master/KNN_model.h5"
+                model_url = "https://github.com/skappal7/Stock_Predictions/blob/master/KNN_model.h5"
                 model_filename = "KNN_model.h5"
             elif selected_model == "Random Forest":
-                model_url = "https://github.com/rajdeepUWE/stock_market_forecast/raw/master/random_forest_model.h5"
+                model_url = "https://github.com/skappal7/Stock_Predictions/blob/master/random_forest_model.h5"
                 model_filename = "random_forest_model.h5"
 
             # Download model file
